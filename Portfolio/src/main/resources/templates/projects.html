@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects</title>
+</head>
+<body>
+    <h1>My Projects</h1>
+    <ul>
+        <li th:each="project : ${projects}">
+            <h3 th:text="${project.title}"></h3>
+            <p th:text="${project.description}"></p>
+            <p><strong>Technologies:</strong> <span th:text="${project.technologies}"></span></p>
+        </li>
+    </ul>
+</body>
+</html>
